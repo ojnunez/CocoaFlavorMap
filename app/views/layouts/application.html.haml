@@ -1,0 +1,28 @@
+!!!
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Cocoa Flavor Map
+    = csrf_meta_tags
+    = stylesheet_link_tag 'admin/application', media: 'all'
+    = javascript_include_tag 'admin/preload'
+    = javascript_include_tag Ckeditor.cdn_url
+    %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyDHt7vrI9b3Ze5nGXaCPrlaBzR-Saqg4G8"}
+  %body
+    #preloader
+      #status  
+    .off-canvas-wrapper.over-flow-hidden
+      .off-canvas-wrapper-inner{"data-off-canvas-wrapper" => ""}
+        .inner-wrap
+          = render 'layouts/admin/left_bar'
+          #paper-bg.wrap-fluid
+            .title-bar{"data-hide-for" => "medium", "data-responsive-toggle" => "example-menu"}
+              %button.menu-icon{"data-toggle" => "", :type => "button"}
+              .title-bar-title Menu
+            #example-menu.top-bar
+              = render 'layouts/admin/top_bar'
+              = render 'layouts/admin/notice'
+            = yield
+          = render 'layouts/admin/right_bar'
+    = javascript_include_tag 'admin/application'

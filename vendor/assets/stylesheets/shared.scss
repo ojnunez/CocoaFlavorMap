@@ -1,0 +1,318 @@
+input[type="radio"] + label span {
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 29px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  width: 29px;
+}
+
+.breadcrumb {
+
+  font-size: .9em;
+  padding: 1.5em 1em 0;
+
+  .container {
+    max-width: 900px;
+  }
+
+  a {
+    color: $gray;
+    margin: .5em 0;
+  }
+}
+
+.title-bar {
+  background: none;
+  padding: .9rem;
+}
+
+.dropdown.menu {
+
+  a {
+    padding: .7rem .5rem;
+  }
+
+}
+
+.header-menu {
+  color: $white;
+  display: table;
+
+  li {
+    border-right: 0;
+    display: table-cell;
+    max-width: 100px;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: normal;
+
+    a {
+      border-bottom: 3px solid $white;
+      color: $white;
+      font-family: 'Oswald';
+      padding: .7rem 0;
+    }
+
+    a:hover {
+      background: none;
+    }
+  }
+
+  li:hover,
+  .active-option {
+    background: $white;
+
+    a {
+      color: $header-titles;
+    }
+  }
+}
+
+.white-button {
+  background: $white;
+  color: $header-titles;
+}
+
+.white-button:hover {
+  background: $white-hover;
+  color: $header-titles;
+}
+
+.hollow-white-button {
+  background: none;
+  border: 1px solid $white;
+  color: $white;
+}
+
+.btn-transparent {
+  border: 2px solid $white;
+  border-radius: 5px;
+  color: $white;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.news {
+
+  h3 {
+    color: $header-titles;
+    font-size: 1.2rem;
+    margin: 3px 0;
+
+    a {
+      color: inherit;
+    }
+
+  }
+
+  .news-image {
+    position: relative;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    span {
+      background: $news;
+      color: $white;
+      display: block;
+      left: 0;
+      padding: 5px 10px;
+      position: absolute;
+      top: 0;
+      z-index: 3;
+    }
+  }
+
+  .news-content {
+
+    span,
+    p {
+      color: $gray;
+      font-size: .9em;
+    }
+
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+.more-news,
+.more-projects {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.not-active {
+  color: $soft-black;
+  cursor: default;
+  pointer-events: none;
+}
+
+footer {
+  background: $footer;
+  color: $footer-font;
+  padding: 30px 0 10px;
+
+  h2 {
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: .8em;
+  }
+
+  .navbar-form {
+    margin: 0 0 20px;
+    padding-left: 0;
+    width: 100%;
+
+    .input-group {
+      width: inherit;
+    }
+  }
+
+  a {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+
+    .footer-image {
+      margin: 0 auto;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li::before {
+      border-color: transparent $footer-font;
+      border-style: solid;
+      border-width: .35em 0 .35em .45em;
+      content: '';
+      display: block;
+      height: 0;
+      left: -1em;
+      position: relative;
+      top: .9em;
+      width: 0;
+    }
+
+    li {
+      font-size: .9em;
+      padding: 0 0 7px;
+    }
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  .news-image {
+
+    img {
+      height: 210px;
+      width: 370px;
+    }
+
+  }
+}
+
+
+@media only screen and (max-width: 58.75rem) {
+
+  .header-menu {
+    display: block;
+    text-align: center;
+
+    li {
+      border-right: 0;
+      display: inline-block;
+      max-width: 180px;
+      text-overflow: initial;
+      white-space: nowrap;
+      width: 100%;
+
+      a {
+        border-bottom: 2px solid $white;
+        color: $white;
+        font-family: 'Oswald';
+        padding: .7rem 0;
+      }
+
+      a:hover {
+        background: none;
+      }
+    }
+
+    li:hover {
+      background: $white;
+
+      a {
+        color: $header-titles;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 39.9em) {
+
+  .menu-icon {
+    display: block;
+    float: left;
+  }
+
+  .menu-icon::after {
+    top: 15px;
+  }
+
+  .title-bar-title {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    width: 270px;
+  }
+
+  .header-menu {
+    display: block;
+
+    li {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+
+      a {
+        border-bottom: 1px solid $white;
+        color: $white;
+        font-family: 'Oswald';
+        padding: .7rem 0;
+      }
+
+      a:hover {
+        background: none;
+      }
+    }
+
+    li:hover {
+      background: $white;
+
+      a {
+        color: $header-titles;
+      }
+    }
+  }
+}

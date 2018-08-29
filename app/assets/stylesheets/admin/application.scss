@@ -1,0 +1,61 @@
+@import "colors";
+@import 'admin/foundation.min';
+@import 'admin/palette';
+@import 'admin/dashboard';
+@import 'admin/style';
+@import 'admin/dripicon';
+@import 'admin/typicons';
+@import 'admin/font-awesome';
+@import 'admin/themify-icons';
+@import 'admin/Montserrat-Hairline';
+@import 'admin/theme';
+@import 'admin/pace-theme-flash';
+@import 'admin/slicknav';
+@import 'dataTables/jquery.dataTables.foundation';
+@import 'admin/jquery.datetimepicker.min';
+
+
+
+.main-actions {
+  width: auto;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: gray;
+  margin: 0 auto 20px;
+  text-transform: uppercase;
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+
+.simple_form {
+  padding: 10px 15px;
+}
+
+.remove_nested_fields {
+  color: $red;
+  display: block;
+  float: right;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.add-content {
+  a {
+    display: block;
+    float: left;
+  }
+}
+
+.smaller {
+  padding: .65em .8em;
+}
+
+.block-right {
+  float: right;
+}

@@ -1,0 +1,49 @@
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Mitr|Oswald');
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+$white: #fff;
+
+body {
+  font-family: 'Mitr', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.login {
+  background: #00b9bc;
+}
+
+.form-group {
+  margin: 0;
+}
+
+input[type=email],
+input[type=password] {
+  border: none;
+  height: 3em;
+  font-size: 1.2em;
+}
+
+span.glyphicon {
+  font-size: 1.2em;
+}
+
+.input-group-addon {
+  background-color: $white;
+  border: 0;
+}
+
+.btn-login {
+  border: 1px solid $white;
+  width: 100%;
+}

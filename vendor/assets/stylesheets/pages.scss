@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Mitr|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import 'foundation_and_overrides';
+@import 'colors';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import 'slick';
+@import 'slick-theme';
+@import 'jssocials';
+@import 'jssocials-theme-classic';
+@import 'lightslider';
+@import 'lightgallery.min';
+@import 'shared';
+
+body {
+  font-family: 'Mitr';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Mitr';
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+.image_element {
+
+  margin-bottom: 15px;
+
+  h5 {
+    font-size: .9rem;
+  }
+
+  span {
+    font-size: .8rem;
+  }
+
+}
+
+.wrapper {
+
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+  }
+}
+
+header {
+  background: $header-background;
+}
+
+.top-bar,
+.top-bar ul {
+  background: none;
+}
+
+.content {
+  background: $white-hover;
+  padding: 10px 0 20px;
+}
+
+.wrapper,
+.share-wrapper,
+.breadcrumb {
+  background: $white;
+  padding: 10px 15px;
+}
+
+.wrapper-side {
+  background: $white;
+  margin-bottom: 10px;
+
+  .buttons {
+    text-align: center;
+  }
+
+  h3,
+  h4 {
+    font-size: 1em;
+  }
+
+  h3 {
+    color: $side-title;
+    font-size: .8em;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  aside {
+    padding: 10px;
+  }
+
+  span {
+    font-size: .6em;
+  }
+
+  h4 {
+    color: $header-titles;
+    margin: 2px 0;
+  }
+
+  p {
+    font-size: .7em;
+  }
+}
+
+.wrapper-content {
+  background: $white;
+  color: $content-font;
+  font-family: "Roboto";
+  font-size: .9em;
+  min-height: 400px;
+  padding: 10px 25px 45px 15px;
+  text-align: justify;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.project {
+  h3,
+  span {
+    display: block;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  span {
+    font-size: .9em;
+    margin: 5px 0;
+  }
+}
+
+.element {
+  margin: 20px 0;
+}
+
+.report-description {
+  color: $gray;
+  font-size: .9em;
+}
+
+.gallery-element {
+  margin: 20px 0;
+}
+
+.share-wrapper {
+  padding-bottom: 30px;
+
+  h4 {
+    color: $gray-title;
+    font-size: 1.1em;
+  }
+}
+
+.download-documents {
+
+  h3 {
+    color: $soft-black;
+    font-size: 1em;
+  }
+}
+
+.div-row {
+  display: table-row;
+  margin-bottom: 5px;
+
+  p {
+    display: table-cell;
+    padding-right: 10px;
+  }
+}
+
+.attachment-description {
+  font-size: 13px;
+}
+
+table {
+
+  font-size: .8rem;
+
+  tr {
+
+    td {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.attachment-category-wrapper {
+  margin-bottom: 20px;
+
+  .centered-folder {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .category-link {
+    color: $soft-black;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+}
+
+.table-border-right {
+  border-right: 1px solid $white-gray;
+}
+
+.embed-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,148 @@
+
+/ Right sidemenu
+#skin-select.fixed-nest
+  / Toggle sidemenu icon button
+  %a#toggle
+  / End of Toggle sidemenu icon button
+  .skin-part
+    #tree-wrap
+      / Profile
+      .profile
+
+        = link_to image_tag('admin/logo2.png'), panel_root_url
+        = link_to panel_root_url() do
+          %h3
+            Cocoa Flavor
+
+            %small ADMIN
+      / End of Profile
+      / Menu sidebar begin
+
+      .fixed-nest-sidebar
+        .slimScrollDiv
+          .side-bar.sidebar-fixed
+
+            %ul#menu-showhide.topnav.slicknav
+
+              %li
+                = link_to panel_root_url, class: 'tooltip-tip', id: 'menu-select', title: 'Dashboard' do
+                  %i.palette-Deep-Purple-700.bg.ti-desktop
+                  %span Dashboard
+              %li
+                %a.tooltip-tip{:href => "#", :title => "Países"}
+                  %i.intial.palette-Green-200.ti-time.bg
+                  %span Países
+                %ul
+                  %li
+                    = link_to "Listado", root_url()
+                  %li
+                    = link_to "Ingresar país", root_url()
+              %li
+                %a.tooltip-tip{:href => "#", :title => "Productores"}
+                  %i.intial.palette-Orange-700.ti-time.bg
+                  %span Productores
+                %ul
+                  %li
+                    = link_to "Listado", root_url()
+                  %li
+                    = link_to "Nuevo productor", root_url()
+
+              %li
+                %a.tooltip-tip{:href => "#", :title => "Zonas/Productos"}
+                  %i.intial.palette-Amber-700.ti-direction-alt.bg
+                  %span Zonas/Productos
+                %ul
+                  %li
+                    = link_to "Listado", root_url()
+                  %li
+                    = link_to "Nueva zona", root_url()
+
+              -#
+                %li
+                  %a.tooltip-tip{:href => "#", :title => "Notas"}
+                    %i.palette-Red-400.bg.ti-pencil
+                    %span
+                      Notas
+                  %ul
+                    %li
+                      = link_to "Listado", panel_grades_url()
+                    %li
+                      = link_to "Nueva nota", new_panel_grade_url()
+
+                %li
+                  %a.tooltip-tip{:href => "#", :title => "Grados"}
+                    %i.palette-Indigo-700.bg.ti-layout
+                    %span
+                      Grados
+                      -#
+                        %small.side-menu-noft New
+                  %ul
+                    %li
+                      = link_to "Listado", panel_school_classes_url()
+                    %li
+                      = link_to "Nuevo grado", new_panel_school_class_url()
+                %li
+                  %a.tooltip-tip{:href => "#", :title => "Materias"}
+                    %i.intial.palette-Blue-700.bg.ti-book
+                    %span Materias
+                  %ul
+                    %li
+                      = link_to "Listado", panel_subjects_url()
+                    %li
+                      = link_to "Nueva materia", new_panel_subject_url()
+                %li
+                  %a{:href => "#", :title => "Etapas Escolares"}
+                    %i.intial.palette-Green-700.bg.ti-briefcase
+                    %span
+                      Etapas Escolares
+                      -#
+                        %small.side-menu-noft.bg-blue hot
+                  %ul
+                    %li
+                      = link_to "Listado", panel_stages_url()
+                    %li
+                      = link_to "Nueva etapa", new_panel_stage_url()
+                %li
+                  %a.tooltip-tip{:href => "#", :title => "Actividades"}
+                    %i.intial.palette-Orange-700.ti-time.bg
+                    %span Actividades
+                  %ul
+                    %li
+                      = link_to "Listado", panel_events_url()
+                    %li
+                      = link_to "Nueva actividad", new_panel_event_url()
+                -#
+                  %li
+                    %a.tooltip-tip{:href => "#", :title => "Contactos (Estudiantes)"}
+                      %i.intial.palette-Amber-700.bg.ti-thumb-up
+                      %span Contactos (Estudiantes)
+                    %ul
+                      %li
+                        = link_to "Listado", panel_contacts_url()
+                      %li
+                        = link_to "Nuevo contacto", new_panel_contact_url()
+
+              - if current_user.has_role?("admin")
+                %li
+                  %a.tooltip-tip{:href => "#", :title => "Usuarios"}
+                    %i.intial.palette-Blue-500.bg.ti-user
+                    %span Usuarios
+                  %ul
+                    %li
+                      = link_to "Listado", panel_users_url()
+                    %li
+                      = link_to "Nuevo usuario", new_panel_user_url()
+              -#
+                %li
+                  %a.tooltip-tip{:href => "#", :title => "Adjuntos"}
+                    %i.intial.palette-Brown-200.bg.ti-folder
+                    %span Adjuntos
+                  %ul
+                    %li
+                      = link_to "Categorías para adjuntos", panel_attachment_categories_url()
+                    %li
+                      = link_to "Adjuntos", panel_attachments_url()
+
+
+          / end of Menu sidebar
+          / bottom chat

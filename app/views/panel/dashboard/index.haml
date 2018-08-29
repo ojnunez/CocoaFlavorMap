@@ -1,0 +1,335 @@
+/ Container Begin
+.top-main-fondamix
+  / Begin page content
+
+.row
+  .small-12
+    %h4 Accesos rápidos
+  %br
+  .small-6.medium-4.columns
+    .main-actions
+      = link_to root_url do
+        = image_tag("admin/worldwide.png")
+        %br
+        = "Países"
+  .small-6.medium-4.columns
+    .main-actions
+      = link_to root_url do
+        = image_tag("admin/ecology.png")
+        %br
+        = "Productores"
+  .small-6.medium-4.columns
+    .main-actions
+      = link_to root_url do
+        = image_tag("admin/map.png")
+        %br
+        = "Zonas/Productos"
+
+-#
+  .row
+    .large-6.columns
+      .box.box-no-shadow.bg-widget-random
+        / /.box-header
+        .box-header.bg-transparent
+          %h3.box-title
+            %i.text-white.ti-rss-alt
+            %span.text-white LASTEST REPORT
+        .box-body
+          .stats-wrap
+            %h2
+              %b.counter-up.text-white 65,800,587
+              %span
+                +
+                %b.counter-up> 20
+                \%
+            %p.text-grey
+              Total students
+              %small This Year
+            %h4
+              %b.counter-up.text-white 1,204
+              %span
+                +
+                %b.counter-up> 5
+                \%
+            %p
+              Graduate
+              %small This week
+            %h4.text-white
+              %b.counter-up 2,690
+              %span
+                +
+                %b.counter-up 12,5
+            %p
+              New students
+              %small This Month
+        / /.box-body
+      / USER
+      / Page Views
+      .row
+        .large-6.columns
+          / New User
+          .box.palette-Yellow-800.bg
+            .box-header.palette-Yellow-800.bg
+              / tools box
+              .pull-right.text-white.box-tools
+                %span.text-white.box-btn>
+                  %i.circle-nest-medium.ti-user
+                   
+              %h3.box-title
+                %span.text-white    NEW USER
+            / /.box-header
+            .row
+              .events-nest
+                .wrap-no-pad.text-white
+                  %h1.text-white
+                    %b.counter-up-fast 390
+                  %span Users
+                  %p 65%
+                  %br/
+            / /.box-body
+          / end of New User
+        .large-6.columns
+          / facebook
+          .box.palette-Cyan-400.bg
+            .box-header.palette-Cyan-400.bg
+              / tools box
+              .pull-right.text-white.box-tools
+                %span.text-white.box-btn>
+                  %i.circle-nest-medium.ti-stats-up
+                   
+              %h3.box-title
+                %span.text-white    PAGE VIEWS
+            / /.box-header
+            .row
+              .events-nest
+                .wrap-no-pad.text-white
+                  %h1.text-white
+                    %b.counter-up-fast 294
+                  %span Users
+                  %p 65%
+                  %br/
+            / /.box-body
+          / end of facebook
+      / End Of Page Views
+      / end of USER
+      / CHART ITEM
+      .box.box-no-shadow.bg-transparent
+        / /.box-header
+        .box-header.no-pad.bg-transparent
+          %h3.box-title
+            %span ACTIVE STUDENTS
+        .box-body.no-pad
+          #line-chart.chart-height-wrap
+        / /.box-body
+      / end of CHART ITEM
+      / Account
+      .your-account
+        .row
+          .medium-3.columns
+            .circlestat{"data-bgcolor" => "#eee", "data-border" => "10", "data-dimension" => "90", "data-fgcolor" => "#CDDC39", "data-fill" => "#FFF", "data-fontsize" => "16", "data-percent" => "55", "data-text" => "55%", "data-width" => "10"}
+          .medium-9.columns
+            %div
+              %h4 Overall stats of sales and distribution
+              %h6
+                You must
+                %strong complete
+                this issues.
+              %ul
+                %li
+                  %i.text-white.palette-Orange-700.bg.ti-pie-chart
+                  2.789
+                %li
+                  %i.text-white.palette-Pink-700.bg.ti-stats-down>
+                  4.365
+                %li
+                  %i.palette-Cyan-700.bg.text-white.ti-bar-chart>
+                  9.860
+      / End of Account
+      / MAP ITEM
+      .box.no-shadow
+        .box-header.bg-transparent
+          / tools box
+          .pull-right.box-tools
+            %span.box-btn{"data-widget" => "collapse"}
+              %i.icon-minus
+            %span.box-btn{"data-widget" => "remove"}
+              %i.icon-cross
+          %h3.box-title
+            %i.ti-location-pin
+            %span MAPS
+        / /.box-header
+        .box-body.no-pad
+          / Gmap
+          #test.gmap3
+        / /.box-body
+      / end of MAP ITEM
+    / End of Right Side
+    .large-6.columns
+      / facebook
+      .box.palette-Blue-800.bg
+        .box-header.palette-Blue-800.bg
+          / tools box
+          .pull-right.text-white.box-tools
+            %span.box-btn
+              %i.circle-nest.ti-comment-alt
+            %span.text-white.box-btn
+              %i.circle-nest.ti-user
+            %span.text-white.box-btn
+              %i.circle-nest.ti-world
+          %h3.box-title
+            %i.text-white.circle-nest-medium.ti-facebook
+            %span.text-white FACEBOOK
+        / /.box-header
+        .row
+          .events-nest
+            .wrap-no-pad.text-white
+              %h1.text-white
+                %img.img-circle.palette-Grey-900.bg{:alt => "profile", :src => "http://placehold.it/1800x1800"}/
+              %span Alif Mubarok
+              %p
+                Monday
+                %i.fontello-record
+                Nov 2016
+                %br
+                With what mingled joy the pen to write to my dearest friend!
+        / /.box-body
+      / end of facebook
+      / twitter
+      .box.palette-Blue-500.bg
+        .box-header.palette-Blue-500.bg
+          / tools box
+          .pull-right.text-white.box-tools
+            %span.box-btn
+              %i.circle-nest.ti-heart
+            %span.text-white.box-btn
+              %i.circle-nest.ti-email
+            %span.text-white.box-btn
+              %i.circle-nest.ti-reload
+          %h3.box-title
+            %i.text-white.circle-nest-medium.ti-twitter-alt
+            %span.text-white TWITTER
+        / /.box-header
+        .row
+          .events-nest
+            .wrap-no-pad.text-white
+              %h1.text-white
+                %img.img-circle.palette-Grey-900.bg{:alt => "profile", :src => "http://placehold.it/1800x1800"}/
+              %span Alif Mubarok
+              %p
+                Monday
+                %i.fontello-record
+                Nov 2016
+                %br
+                With what mingled joy the pen to write to my dearest friend!
+        / /.box-body
+      / end of twitter
+      / SUMMARY
+      .box.box-no-shadow
+        / /.box-header
+        .box-body
+          .row.summary-border-top
+            .large-6.columns
+              .summary-nest
+                %h2.text-black
+                  %span.counter-up 276.747
+                  %small.palette-Orange-700.bg K
+                %p Sales
+            .large-6.columns.summary-border-left
+              .summary-nest
+                %h2.text-black
+                  %span.counter-up 3.219
+                  %small.palette-Pink-500.bg K
+                %p Man
+          .row
+            .large-6.columns
+              .summary-nest.summary-pad-nest
+                %span.text-center
+                  %canvas#partly-cloudy-day{:height => "70", :width => "70"}
+            .large-6.columns
+              .summary-nest.summary-pad-nest
+                %h4.text-left
+                  %span.counter-up> 05
+                  \/
+                  %span.counter-up> 12
+                  \/
+                  %span.counter-up 2014
+                %p.text-left Today
+          .row.summary-border-bottom
+            .large-6.columns
+              .summary-nest.summary-pad-nest
+                %h2.text-black
+                  %span.counter-up 82
+                  %small.palette-Lime-500.bg %
+                %p Avarage Sales
+            .large-6.columns.summary-border-left
+              .summary-nest.summary-pad-nest
+                %h2.text-black
+                  %span.counter-up 24
+                  %small.palette-Teal-500.bg th
+                %p Overall Rank
+        / end .timeline
+      / end of SUMMARY
+      / Even Item
+      .box.no-shadow
+        .box-header.bg-transparent
+          / tools box
+          .pull-right.box-tools
+            %span.box-btn{"data-widget" => "collapse"}
+              %i.icon-minus
+            %span.box-btn{"data-widget" => "remove"}
+              %i.icon-cross
+          %h3.box-title
+            %i.palette-Teal-400.text.ti-notepad
+            %span LAST POST
+        / /.box-header
+        .box-body
+          .events-nest
+            .text-white.lastest-post-nest
+              %div
+                %small.palette-Teal-400.bg NY
+                %h4 Pink and Blue: Coloring Inside the Lines of Gender
+                %span
+                  %i.ti-eye
+                  121
+                %span
+                  %i.ti-thumb-up>
+                  45
+                %span
+                  %i.ti-comment-alt
+                  8
+            %ul
+              %li
+                %h4
+                  %span Mike Nikolson
+                  %small 2 Minute
+                %h3 How Science Is Helping Us Understand Gender
+                %hr/
+              %li
+                %h4
+                  %span Mark Jorgensen
+                  %small 1 hours
+                %h3 The Best Maps of 2016
+                %hr/
+              %li
+                %h4
+                  %span Mark Jorgensen
+                  %small 1 Days
+                %h3 Winter Solstice Is Coming—Year’s Shortest Day Explained
+                %hr/
+              %li
+                %h4
+                  %span Mark Jorgensen
+                  %small 1 Month
+                %h3 Inside America’s Shocking WWII Propaganda Machine
+        / /.box-body
+      / End of Even Item
+    / End of Right Side
+  / Widget
+.row
+  .large-4.columns
+  / /.box
+/ End of Widget
+%footer
+  #footer
+
+  / End of Container Begin

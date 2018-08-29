@@ -1,0 +1,32 @@
+%br
+.row
+  .small-12.medium-12.large-12
+    .callout.secondary
+      .row
+        .medium-9.columns
+          %h4= model.model_name.human(count: :many)
+        .medium-3.columns
+          = link_to new_item_url, class: 'primary button no-margin float-right' do
+            %span.glyphicon.glyphicon-plus
+            Nuevo
+
+    %table.table.table-hover.table-striped.simple-data-table
+      %thead
+        %tr
+          %th{ width: '20%' } Nombre
+          %th{ width: '20%' } Correo
+          %th{ widht: '20%' } Rol
+          %th{ widht: '20%' }
+      %tbody
+        - @items.each do |item|
+          %tr
+            %td
+              = item.full_name rescue item.name
+            %td
+              = item.email
+            %td
+              = t("activerecord.enum.user.role.#{item.roles.first.name}") rescue nil
+            %td
+              - if (current_user.has_role?("admin"))
+                = link_to "Editar", URI.decode(edit_item_url(item.id)), class: "button"
+                = link_to "Eliminar", URI.decode(item_url(item.id)), class: "button alert", method: :delete, 'data-confirm' => "Awebo?" unless User.count == 1

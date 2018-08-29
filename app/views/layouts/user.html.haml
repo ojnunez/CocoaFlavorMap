@@ -1,0 +1,20 @@
+!!!
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Cocoa Flavor Map Login
+    = csrf_meta_tags
+    = stylesheet_link_tag 'admin/application', media: 'all'
+    = javascript_include_tag 'admin/preload'
+    =# %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyDHt7vrI9b3Ze5nGXaCPrlaBzR-Saqg4G8"}
+  %body
+    #preloader
+      #status  
+    .off-canvas-wrapper.over-flow-hidden
+      .off-canvas-wrapper-inner{"data-off-canvas-wrapper" => ""}
+        .inner-wrap
+          #paper-bg.wrap-fluid
+            %br
+            = yield
+    = javascript_include_tag 'admin/application'

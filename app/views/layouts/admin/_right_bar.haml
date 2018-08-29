@@ -1,0 +1,102 @@
+#offCanvas.bg-transparent.off-canvas.position-right{"data-off-canvas" => "", "data-position" => "right"}
+  / Close button
+  %button.close-button{"aria-label" => "Close menu", "data-close" => "", :type => "button"}
+    %span{"aria-hidden" => "true"} ×
+  .off-canvas-content{"data-off-canvas-content" => ""}
+    / Menu
+    %ul.nav.navbar-stacked
+      %li
+        %a{:href => "#"}
+          %span.palette-Black-100.bg.ti-menu-alt>
+          Notifications
+      %li
+        %a{:href => "#"}
+          %span.palette-Deep-Purple-100.bg.ti-menu-alt
+          %i.ti-more-alt
+          %span.palette-Deep-Purple-200.bg.ti-shopping-cart-full
+          %i.ti-more-alt
+          %span.palette-Deep-Purple-400.bg.ti-gift
+          %i.ti-more-alt
+          %span.palette-Deep-Purple-600.bg.ti-truck
+          %i.ti-more-alt
+          = succeed "Shipping" do
+            %span.palette-Deep-Purple-800.bg.ti-home
+          %strong Robert Langdon
+          is completed!
+          %small 1m
+      %li
+        %a{:href => "#"}
+          %span.palette-Blue-A100.bg.ti-user>
+          Meet new user
+          %strong Lilian Meirs
+          %small 23m
+      %li
+        %a{:href => "#"}
+          %span.palette-Red-A400.bg.ti-cloud-down
+          %strong Robert
+          added new request for ne item for refund
+          %small 34m
+      %li
+        %a{:href => "#"}
+          %span.palette-Orange-200.bg.ti-menu-alt
+          %i.ti-more-alt
+          %span.palette-Orange-400.bg.ti-shopping-cart-full
+          %i.ti-more-alt
+          %span.palette-Orange-600.bg.ti-gift
+          = succeed "Shipping" do
+            %br/
+          %strong Robert Langdon
+          is completed!
+          %small 40m
+      %li
+        %a{:href => "#"}
+          %span.palette-Amber-500.bg.ti-comment-alt>
+          Mike Nilson commented Post
+          %br/
+          Like this one! Keep going!
+          %small 50m
+      %li
+        %a{:href => "#"}
+          %span.palette-Cyan-300.bg.ti-shopping-cart-full>
+          Amazing!
+          %strong Mike Nilson
+          just purchased Your item
+          %small 1h
+      %li
+        %a{:href => "#"}
+          %span.palette-Light-Green-500.bg.ti-image
+          %strong Lilian Meirs
+          Posting new image cover, and just got 2.000 likes
+          %br/
+          %img{:alt => "", :src => "http://placehold.it/2000x2000"}/
+          %small 1h 12m
+      %li
+        %a{:href => "#"}
+          %span.palette-Amber-500.bg.ti-comment-alt>
+          Mike Nilson commented Post
+          %br/
+          Like this one! Keep going!
+          %small 1h 39
+      %li
+        %a{:href => "#"}
+          %span.palette-Cyan-300.bg.ti-shopping-cart-full>
+          Amazing!
+          %strong Mike Nilson
+          just purchased Your item
+          %br/
+          %img{:alt => "", :src => "http://placehold.it/2000x2000"}/
+          %small 1h 45m
+      %li
+        %a{:href => "#"}
+          %span.palette-Cyan-300.bg.ti-shopping-cart-full>
+          Amazing!
+          %strong Mike Nilson
+          just purchased Your item
+          %small 23m
+      %li
+        %a{:href => "#"}
+          %span.palette-Amber-500.bg.ti-comment-alt>
+          Mike Nilson commented Post
+          %br/
+          Like this one! Keep going!
+          %small 2h
