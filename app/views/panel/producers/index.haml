@@ -1,7 +1,4 @@
 %br
-.breacrumb
-  = render_breadcrumbs separator: ' / '
-%br
 .row
   .small-12.medium-12.large-12
     .callout.secondary
@@ -16,8 +13,7 @@
     %table.table.table-hover.table-striped.simple-data-table
       %thead
         %tr
-          %th{ width: '60%' } Titulo
-          %th{ width: '20%' } Creado el
+          %th{ width: '80%' } Productor
           %th{ widht: '20%' }
       %tbody
         - @items.each do |item|
@@ -25,7 +21,5 @@
             %td
               = item.name
             %td
-              = item.created_at
-            %td
               = link_to "Editar", URI.decode(edit_item_url(item.id)), class: "button"
-              = link_to 'Eliminar', URI.decode(item_url(item.id)), method: :delete, data: { confirm: "Estás seguro de borrarlo?" }, class: "button alert"
+              = link_to "Eliminar", URI.decode(item_url(item.id)), class: "button alert", method: :delete, 'data-confirm' => "Awebo?" unless User.count == 1

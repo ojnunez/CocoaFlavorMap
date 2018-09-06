@@ -1,0 +1,26 @@
+= f.association :producer
+
+.row
+  .medium-12.columns
+    = f.input :name, required: true
+  .medium-12.columns
+    = f.input :description
+.row
+  .medium-6.columns
+    = f.input :latitude
+  .medium-6.columns
+    = f.input :longitude
+.row
+  .medium-6.columns
+    = f.label :picture do
+      = "Imagen"
+      = image_tag f.object.picture.url, class: 'img-responsive img-thumbnail' rescue nil
+    = f.file_field :picture, hide_label: true, accept: 'image/*'
+  .medium-6.columns
+    = f.input :youtube_url
+
+.row
+  .medium-12.columns
+    = f.input :content_left, as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
+  .medium-12.columns
+    = f.input :content_right, as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }

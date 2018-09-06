@@ -34,18 +34,18 @@
                   %span Países
                 %ul
                   %li
-                    = link_to "Listado", root_url()
+                    = link_to "Listado", panel_countries_url()
                   %li
-                    = link_to "Ingresar país", root_url()
+                    = link_to "Ingresar país", new_panel_country_url()
               %li
                 %a.tooltip-tip{:href => "#", :title => "Productores"}
                   %i.intial.palette-Orange-700.ti-time.bg
                   %span Productores
                 %ul
                   %li
-                    = link_to "Listado", root_url()
+                    = link_to "Listado", panel_producers_url()
                   %li
-                    = link_to "Nuevo productor", root_url()
+                    = link_to "Nuevo productor", new_panel_producer_url()
 
               %li
                 %a.tooltip-tip{:href => "#", :title => "Zonas/Productos"}
@@ -53,9 +53,9 @@
                   %span Zonas/Productos
                 %ul
                   %li
-                    = link_to "Listado", root_url()
+                    = link_to "Listado", panel_places_url()
                   %li
-                    = link_to "Nueva zona", root_url()
+                    = link_to "Nueva zona", new_panel_place_url()
 
               -#
                 %li
@@ -132,17 +132,3 @@
                       = link_to "Listado", panel_users_url()
                     %li
                       = link_to "Nuevo usuario", new_panel_user_url()
-              -#
-                %li
-                  %a.tooltip-tip{:href => "#", :title => "Adjuntos"}
-                    %i.intial.palette-Brown-200.bg.ti-folder
-                    %span Adjuntos
-                  %ul
-                    %li
-                      = link_to "Categorías para adjuntos", panel_attachment_categories_url()
-                    %li
-                      = link_to "Adjuntos", panel_attachments_url()
-
-
-          / end of Menu sidebar
-          / bottom chat

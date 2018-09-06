@@ -65,6 +65,7 @@ gem 'simple_form'
 
 gem 'foundation-rails'
 
+gem 'gmaps4rails'
 
 gem 'cancancan', '~> 2.0'
 gem 'rolify'

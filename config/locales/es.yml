@@ -205,7 +205,25 @@ es:
     models:
       role: Rol
       user: Usuario
+      country: País
+      producer: Productor
+      place: Lugares/Productos
     attributes:
+      country:
+        name: Nombre
+      producer:
+        country: País
+        name: Nombre productor/a
+      place:
+        producer: Productor/a
+        name: Nombre
+        description: Descripción
+        youtube_url: URL de YouYube
+        main_image: Imagen principal
+        latitude: Latitud
+        longitud: Longitud
+        content_left: Contenido (columna izquierda)
+        content_right: Contenido (columna derecha)
       user:
         active: ¿Activo?
         name: Nombre

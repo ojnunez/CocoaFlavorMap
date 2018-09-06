@@ -9,25 +9,11 @@ Rails.application.routes.draw do
 
   namespace :panel do
     root to: "dashboard#index"
-
-    resources :events do
-      collection do
-        get :list
-      end
-    end #actividades
-    resources :grades do
-      collection do
-        get :personal
-      end
-    end #notas
-    resources :school_classes #grados (1ero, ....)
-    resources :subjects #materias
-    resources :periods #periodos
-    resources :stages #etapa escolar
-    resources :contacts
+    resources :countries
+    resources :producers
+    resources :places
     resources :profile, only: [:edit, :update]
     resources :users
-    resources :notifications, only: [:index]
   end
   root to: "dashboard#index"
 
